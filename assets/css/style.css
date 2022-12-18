@@ -39,5 +39,10 @@ body {
 .boxF {
   background-color: yellow;
 }
+.boxF:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
 
 /*# sourceMappingURL=style.css.map */

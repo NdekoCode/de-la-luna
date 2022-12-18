@@ -35,4 +35,8 @@ body {
 .boxF {
     @extend .boxE;
     background-color: yellow;
+
+    &:before {
+        @include pseudoEl;
+    }
 }
