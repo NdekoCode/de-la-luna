@@ -4,14 +4,25 @@
     margin     : 0;
     padding    : 0;
     box-sizing : border-box;
-    font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: $fonts;
 
 }
 
 body {
     background-color: $color-white;
+    min-height      : 100vh;
     color           : #333;
     padding         : 15px;
+}
+
+p {
+
+    font-size: 14px;
+}
+
+.container.centered {
+    @extend %flexMiddle;
+    gap: rem(20);
 }
 
 .btn {
@@ -23,7 +34,7 @@ body {
     height          : rem(300);
     aspect-ratio    : 1/1;
     background-color: salmon;
-    @include flexMiddle;
+    @extend %flexMiddle;
 }
 
 .boxE {

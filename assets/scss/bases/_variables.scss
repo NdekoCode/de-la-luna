@@ -1,3 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 $color-white :#eee;
+$color-white :#fff;
+$color-gray  : #999;
+$color-black :rgba(0, 0, 0, 0.95);
+$bg-light    :rgba(0, 0, 0, 0.05);
+
+
+// POLICE
+$fonts: Inter,
+"Segoe UI",
+Tahoma,
+Geneva,
+Verdana,
+sans-serif;
+
+// DIMENSIONS
+$defaultRound: 5px;
+$spacing     : 2rem;

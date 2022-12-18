@@ -1,0 +1,25 @@
+// Grace à l'heritage, les mixins nous permet de ne pas repeter les block de code meme lors de la compilation
+%btn {
+    padding         : 10px 14px;
+    border-radius   : 4px;
+    border          : none;
+    background-color: gray;
+
+}
+
+%card {
+    color           : rgba(0, 0, 0, 0.75);
+    background-color: $color-white;
+    box-shadow      : 0 20px 30px rgba(0, 0, 0, 0.05), 0 15px 10px rgba(0, 0, 0, 0.03);
+    border          : 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom   : rem(15);
+    min-width       : 150px;
+    overflow        : hidden;
+    ;
+}
+
+%flexMiddle {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
