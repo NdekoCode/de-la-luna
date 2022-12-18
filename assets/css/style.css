@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+.btn {
+  padding: 10px 14px;
+  border-radius: 4px;
+  border: none;
+  background-color: gray;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #eee;
+  color: #333;
+  padding: 15px;
+}
+
+.boxP {
+  height: 18.75rem;
+  aspect-ratio: 1/1;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxE, .boxF {
+  width: 100px;
+  aspect-ratio: 1/1;
+  background-color: #333;
+}
+
+.boxF {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */
