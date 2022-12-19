@@ -48,6 +48,14 @@
   --transition-timing: 0.2s ease;
 }
 
+.modal__close-overlay {
+  width: 100%;
+}
+
+.modal__close-overlay {
+  height: 100%;
+}
+
 .modal, .overlay {
   position: fixed;
   height: 100vh;
@@ -55,15 +63,28 @@
 
 .modal__close-overlay {
   position: absolute;
-  height: 100%;
 }
 
 .modal__close-overlay, .modal {
   top: 0;
   left: 0;
-  width: 100%;
 }
 
+/** 
+=== FLEX
+*/
+.modal {
+  display: flex;
+}
+
+.modal {
+  justify-content: center;
+  align-items: center;
+}
+
+/** 
+    === Component
+*/
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
@@ -179,6 +200,7 @@ h6 {
  * Overlay
 */
 .overlay {
+  background-color: var(--bg-light);
   opacity: 0;
   pointer-events: none;
   z-index: 15;
@@ -194,9 +216,6 @@ h6 {
 */
 .modal {
   background-color: var(--bg-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   /*  opacity               : 0;
   visibility                : hidden;
   pointer-events            : none; */
