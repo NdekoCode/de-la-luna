@@ -1,25 +1,55 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
-.btn {
-  padding: 10px 14px;
-  border-radius: 4px;
-  border: none;
-  background-color: gray;
-}
-
-.card {
-  color: rgba(0, 0, 0, 0.75);
-  background-color: #fff;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.05), 0 15px 10px rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  margin-bottom: 0.9375rem;
-  min-width: 150px;
-  overflow: hidden;
-}
-
-.boxP, .container.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"); /*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+/**
+ * copyright 2022 @ndekocode 
+ */
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+:root {
+  /**
+   * colors
+   */
+  --spanish-gray: hsl(0, 0%, 60%);
+  --sonic-silver: hsl(0, 0%, 47%);
+  --eerie-black: hsl(0, 0%, 13%);
+  --salmon-pink: hsl(353, 100%, 78%);
+  --sandy-brown: hsl(29, 90%, 65%);
+  --bittersweet: hsl(0, 100%, 70%);
+  --ocean-green: hsl(152, 51%, 52%);
+  --davys-gray: hsl(0, 0%, 33%);
+  --cultured: hsl(0, 0%, 93%);
+  --white: hsl(0, 100%, 100%);
+  --onyx: hsl(0, 0%, 27%);
+  /**
+   * typography
+   */
+  --fs-1: 1.563rem;
+  --fs-2: 1.375rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.125rem;
+  --fs-5: 1rem;
+  --fs-6: 0.938rem;
+  --fs-7: 0.875rem;
+  --fs-8: 0.813rem;
+  --fs-9: 0.75rem;
+  --fs-10: 0.688rem;
+  --fs-11: 0.625rem;
+  --weight-300: 300;
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-600: 600;
+  --weight-700: 700;
+  /**
+   * border-radius
+   */
+  --border-radius-md: 10px;
+  --border-radius-sm: 5px;
+  /**
+   * transition 
+   */
+  --transition-timing: 0.2s ease;
 }
 
 *,
@@ -28,7 +58,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Inter, Roboto, Tahoma, Geneva, Verdana, "Segoe UI", sans-serif;
+}
+
+html {
+  font-family: Inter, Roboto, Tahoma, Geneva, Verdana, "Segoe UI", sans-serif;
+  overscroll-behavior: contain;
 }
 
 body {
@@ -36,64 +71,56 @@ body {
   min-height: 100vh;
   color: #333;
   padding: 15px;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input,
+input::placeholder {
+  font: inherit;
+}
+
+button {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+img,
+svg,
+button,
+input,
+a {
+  display: block;
+}
+
+span {
+  display: inline-block;
+}
+
+input {
+  width: 100%;
 }
 
 p {
   font-size: 14px;
 }
 
-.container.centered {
-  gap: 1.25rem;
-}
-
-.boxP {
-  height: 18.75rem;
-  aspect-ratio: 1/1;
-  background-color: salmon;
-}
-
-.boxE, .boxF {
-  width: 100px;
-  aspect-ratio: 1/1;
-  background-color: #333;
-}
-
-.boxF {
-  background-color: yellow;
-}
-.boxF:before {
-  content: "";
-  display: block;
-  position: absolute;
-}
-
-.card {
-  width: 20rem;
-  border-radius: 5px;
-}
-.card .card__image {
-  height: 14rem;
-  background: url("https://images.unsplash.com/photo-1546561892-65bf811416b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHN0YXIlMjB3YXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60") no-repeat center center/cover;
-}
-.card .card__content {
-  padding: 2rem;
-}
-.card .card__desc {
-  line-height: 1.6;
-  color: #999;
-}
-.card .card__title {
-  padding: 1rem 0;
-}
-.card--dark {
-  background-color: rgba(0, 0, 0, 0.95);
-  color: #fff;
-}
-.card--dark .card__title {
-  color: #fff;
-}
-.card--dark .card__image {
-  background-image: url("https://images.unsplash.com/photo-1547700055-b61cacebece9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHN0YXIlMjB3YXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "Segoe UI", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
