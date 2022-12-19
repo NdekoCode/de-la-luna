@@ -4,12 +4,23 @@
 .modal {
 
     @extend %posFullFixed;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    opacity        : 0;
-    visibility     : hidden;
-    pointer-events : none;
-    z-index        : 10;
-    animation      : popup 0.55s ease-in-out 1s forwards;
+    @extend %topLeft;
+    background-color          : var(--bg-light);
+    display                   : flex;
+    align-items               : center;
+    justify-content           : center;
+    /*  opacity               : 0;
+    visibility                : hidden;
+    pointer-events            : none; */
+    z-index                   : 10;
+    /*     animation          : popup 0.55s ease-in-out 3s forwards; */
+}
+
+.modal.closed {
+    display: none;
+}
+
+.modal__close-overlay {
+    @extend %posFullAbsolute;
+    @extend %topLeft;
 }

@@ -15,21 +15,63 @@
     margin-bottom   : rem(15);
     min-width       : 150px;
     overflow        : hidden;
-    ;
+}
+
+%d-none {
+    display: none;
 }
 
 %posFullFixed {
 
-    position        : fixed;
-    top             : 0;
-    left            : 0;
-    width           : 100%;
-    height          : 100vh;
-    background-color: var(--bg-light);
+    position: fixed;
+    height  : 100vh;
+}
+
+%posFullAbsolute {
+
+    position: absolute;
+    height  : 100%;
+}
+
+%topLeft {
+
+    top  : 0;
+    left : 0;
+    width: 100%;
+}
+
+%flex {
+    display: flex;
+}
+
+%flexCol {
+    @extend %flex;
+    flex-direction: column;
 }
 
 %flexMiddle {
     display        : flex;
     justify-content: center;
     align-items    : center;
+}
+
+%flexRowXCenter {
+    @extend %flex;
+    justify-content: center;
+}
+
+%flexRowYCenter {
+
+    @extend %flex;
+    align-items: center;
+}
+
+%flexColXCenter {
+    @extend %flexCol;
+    align-items: center;
+}
+
+%flexColYCenter {
+    @extend %flexCol;
+    justify-content: center;
 }

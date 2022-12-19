@@ -5,6 +5,14 @@
     transform: translate(-$x, -$y);
 }
 
+@mixin posFullFixed($pos:'fixed', $w:100%, $h:100vh) {
+    position: #{$pos};
+    top     : 0;
+    left    : 0;
+    width   : $w;
+    height  : $h;
+}
+
 @mixin pseudoEl($display:'block', $pos:"absolute", $content:'') {
     content : $content;
     display : #{$display};
