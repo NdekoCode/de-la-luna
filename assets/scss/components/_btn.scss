@@ -4,7 +4,7 @@
 }
 
 .btn-dark {
-    @extend %btn;
+    @extend .btn;
     background-color: var(--eerie-black);
     color           : var(--white);
 

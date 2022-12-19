@@ -20,7 +20,7 @@
 <body>
     <div class="overlay" data-overlay></div>
     <!-- MODAL -->
-    <div class="modal" data-modal>
+    <div class="modal closed" data-modal>
         <div class="modal__close-overlay" data-modal-overlay></div>
         <div class="modal__content">
             <button class="modal__close-btn" data-modal-close>
@@ -46,6 +46,32 @@
             </div>
         </div>
     </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div class="toast notification-toast" data-toast>
+
+        <button class="toast__close-btn" data-toast-close>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" stroke="inherit" viewBox="0 0 512 512">
+                <title>Close</title>
+                <path fill="none" stroke="currentColor" stroke-width="inherit" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" />
+            </svg>
+        </button>
+        <div class="toast__banner">
+            <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earings">
+        </div>
+        <div class="toast__detail">
+            <div class="toast__message">
+                Someone in new just bought
+            </div>
+            <h5 class="toast__title">Rose Gold Earrings</h5>
+            <p class="toast__meta">
+                <time datetime="PT2M">2 Minutes</time> ago
+            </p>
+        </div>
+    </div>
+
+
     <!-- CUSTOM JS LINK -->
     <script src="./assets/js/script.js"></script>
 </body>

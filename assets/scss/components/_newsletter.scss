@@ -49,4 +49,9 @@
     @extend .btn-dark;
     font-weight   : var(--weight-600);
     text-transform: uppercase;
+    margin        : auto;
+
+    &:hover {
+        background-color: var(--salmon-pink);
+    }
 }

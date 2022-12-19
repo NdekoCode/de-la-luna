@@ -7,12 +7,12 @@
     @extend %topLeft;
     @extend %wFull;
     @extend %flexMiddle;
-    background-color          : var(--bg-light);
-    /*  opacity               : 0;
-    visibility                : hidden;
-    pointer-events            : none; */
-    z-index                   : 10;
-    /*     animation          : popup 0.55s ease-in-out 3s forwards; */
+    background-color: var(--bg-light);
+    opacity         : 0;
+    visibility      : hidden;
+    pointer-events  : none;
+    z-index         : 10;
+    animation       : popup 0.35s ease-in-out 5s forwards;
 }
 
 .modal.closed {
@@ -32,10 +32,10 @@
     @extend %posRelative;
     z-index: 2;
 
-    border-radius        : var(--border-radius-md);
-    background-color     : var(--white);
-    overflow             : hidden;
-    /*   animation       : scaleUp 0.5s ease-in-out 5s forwards; */
+    border-radius   : var(--border-radius-md);
+    background-color: var(--white);
+    overflow        : hidden;
+    animation       : scaleUp 0.35s ease-in-out 5s forwards;
 
 }
 

@@ -88,11 +88,12 @@
   align-items: center;
 }
 
-.btn-dark, .btn-newsletter, .btn {
+.btn, .btn-dark, .btn-newsletter {
   padding: 10px 14px;
   border-radius: var(--border-radius-sm);
   border: none;
   font-size: var(--fs-7);
+  transition: color var(--transition-timing), background-color, var(--transition-timing), border var(--transition-timing);
 }
 
 /*-----------------------------------*\
@@ -201,13 +202,19 @@ h6 {
   font-family: "Poppins", "Segoe UI", sans-serif;
 }
 
-.btn {
+.btn, .btn-dark, .btn-newsletter {
   font-weight: var(--weight-400);
 }
 
 .btn-dark, .btn-newsletter {
   background-color: var(--eerie-black);
   color: var(--white);
+}
+
+.toast__banner img {
+  width: 80px;
+  height: 70px;
+  object-fit: cover;
 }
 
 /*-----------------------------------*\
@@ -236,11 +243,11 @@ h6 {
 */
 .modal {
   background-color: var(--bg-light);
-  /*  opacity               : 0;
-  visibility                : hidden;
-  pointer-events            : none; */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   z-index: 10;
-  /*     animation          : popup 0.55s ease-in-out 3s forwards; */
+  animation: popup 0.35s ease-in-out 5s forwards;
 }
 
 .modal.closed {
@@ -258,7 +265,7 @@ h6 {
   border-radius: var(--border-radius-md);
   background-color: var(--white);
   overflow: hidden;
-  /*   animation       : scaleUp 0.5s ease-in-out 5s forwards; */
+  animation: scaleUp 0.35s ease-in-out 5s forwards;
 }
 
 .modal__close-btn {
@@ -324,6 +331,10 @@ h6 {
 .btn-newsletter {
   font-weight: var(--weight-600);
   text-transform: uppercase;
+  margin: auto;
+}
+.btn-newsletter:hover {
+  background-color: var(--salmon-pink);
 }
 
 /*-----------------------------------*\
