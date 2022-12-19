@@ -1,53 +1,112 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+
+/**
+ * copyright 2022 @ndekocode 
+ */
+
 *,
 *::before,
 *::after {
-    margin     : 0;
-    padding    : 0;
-    box-sizing : border-box;
-    font-family: $fonts;
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: $fonts;
 
+}
+
+html {
+  font-family        : $fonts;
+  overscroll-behavior: contain;
 }
 
 body {
-    background-color: $color-white;
-    min-height      : 100vh;
-    color           : #333;
-    padding         : 15px;
+  background-color: var(--white);
+  min-height      : 100vh;
+  color           : #333;
+  padding         : 15px;
+  overflow-x      : hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * SCROLLBAR STYLE
+ * 
+*/
+body::-webkit-scrollbar {
+  width: 15px
+}
+
+body::-webkit-scrollbar-track {
+  background : var(--white);
+  border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+  background   : hsl(0, 0%, 80%);
+  border       : 3px solid var(--white);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 0%, 70%);
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input,
+input::placeholder {
+
+  font: inherit;
+}
+
+button {
+  background: none;
+  border    : none;
+  cursor    : pointer;
+}
+
+img,
+svg,
+button,
+input,
+a {
+  display: block;
+}
+
+span {
+  display: inline-block;
+}
+
+svg {
+  min-width   : rem(16);
+  min-height  : rem(16);
+  stroke-width: var(--icon-stroke-width);
+}
+
+input {
+  @extend %wFull;
+  transition: color var(--transition-timing), outline var(--transition-timing);
 }
 
 p {
-
-    font-size: 14px;
-}
-
-.container.centered {
-    @extend %flexMiddle;
-    gap: rem(20);
-}
-
-.btn {
-    @extend %btn;
+  font-size: 14px;
 }
 
 
-.boxP {
-    height          : rem(300);
-    aspect-ratio    : 1/1;
-    background-color: salmon;
-    @extend %flexMiddle;
-}
-
-.boxE {
-    width           : 100px;
-    aspect-ratio    : 1/1;
-    background-color: #333;
-}
-
-.boxF {
-    @extend .boxE;
-    background-color: yellow;
-
-    &:before {
-        @include pseudoEl;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $head-fonts;
 }

@@ -35,3 +35,35 @@
         }
     }
 }
+
+.container.centered {
+    @extend %flexMiddle;
+    gap: rem(20);
+}
+
+.btn {
+    @extend %btn;
+}
+
+
+.boxP {
+    height          : rem(300);
+    aspect-ratio    : 1/1;
+    background-color: salmon;
+    @extend %flexMiddle;
+}
+
+.boxE {
+    width           : 100px;
+    aspect-ratio    : 1/1;
+    background-color: #333;
+}
+
+.boxF {
+    @extend .boxE;
+    background-color: yellow;
+
+    &:before {
+        @include pseudoEl;
+    }
+}

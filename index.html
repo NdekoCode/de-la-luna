@@ -5,11 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De la luna</title>
+    <title>Bambino DelaLUNA</title>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+    <!-- CUSTOM CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- GOOGLE FONT LINK -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 </head>
 
 <body>
-
+    <div class="overlay" data-overlay></div>
+    <!-- MODAL -->
+    <div class="modal" data-modal>
+        <div class="modal__close-overlay" data-modal-overlay></div>
+        <div class="modal__content">
+            <button class="modal__close-btn" data-modal-close>
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" stroke="inherit" viewBox="0 0 512 512">
+                    <title>Close</title>
+                    <path fill="none" stroke="currentColor" stroke-width="inherit" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" />
+                </svg>
+            </button>
+            <div class="newsletter-img">
+                <img src="./assets/images/newsletter.png" alt="Subscribe Newsletter">
+            </div>
+            <div class="newsletter">
+                <form action="">
+                    <div class="newsletter__header">
+                        <h3 class="newsletter__title">Subscribe Newsletter</h3>
+                        <p class="newsletter__desc">Subscribe the <b>DelaLUNA</b> to get latest products and
+                            discount update.</p>
+                    </div>
+                    <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+                    <button type="submit" class="btn-newsletter">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- CUSTOM JS LINK -->
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

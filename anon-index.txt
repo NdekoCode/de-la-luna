@@ -5,7 +5,7 @@ MODAL
 alt: subscribe newsletter
 
 Subscribe Newsletter.
-Subscribe the Anon to get latest products and discount update.
+Subscribe the DelaLUNA to get latest products and discount update.
 
 placeholder: Email Address
 SUBSCRIBE
@@ -35,7 +35,7 @@ ENGLISH
 ESPAÑOL
 FRANÇAIS
 
-alt: Anon's logo
+alt: DelaLUNA's logo
 placeholder: Enter your product name...
 
 
@@ -727,4 +727,4 @@ CONTACT
 Example@Gmail.Com
 
 alt: payment method
-Copyright © Anon All Rights Reserved.
+Copyright © DelaLUNA All Rights Reserved.

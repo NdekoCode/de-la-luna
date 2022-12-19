@@ -1,0 +1,61 @@
+/* 
+ * MODAL
+*/
+.modal {
+
+    @extend %posFullFixed;
+    @extend %topLeft;
+    @extend %wFull;
+    @extend %flexMiddle;
+    background-color          : var(--bg-light);
+    /*  opacity               : 0;
+    visibility                : hidden;
+    pointer-events            : none; */
+    z-index                   : 10;
+    /*     animation          : popup 0.55s ease-in-out 3s forwards; */
+}
+
+.modal.closed {
+    display: none;
+}
+
+.modal__close-overlay {
+    @extend %posFullAbsolute;
+    @extend %topLeft;
+    z-index: 1;
+}
+
+.modal__content {
+    max-width: 350px;
+    margin   : rem(20);
+
+    @extend %posRelative;
+    z-index: 2;
+
+    border-radius        : var(--border-radius-md);
+    background-color     : var(--white);
+    overflow             : hidden;
+    /*   animation       : scaleUp 0.5s ease-in-out 5s forwards; */
+
+}
+
+.modal__close-btn {
+    @extend %posAbsolute;
+    top             : 15px;
+    right           : 15px;
+    background-color: var(--salmon-pink);
+    color           : var(--white);
+    font-size       : 16px;
+    padding         : 5px;
+    border-radius   : var(--border-radius-sm);
+
+    transition: opacity var(--transition-timing);
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    svg {
+        --icon-stroke-width: 70px;
+    }
+}
