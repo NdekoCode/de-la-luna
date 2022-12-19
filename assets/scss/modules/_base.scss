@@ -10,28 +10,28 @@
 *,
 *::before,
 *::after {
-    margin     : 0;
-    padding    : 0;
-    box-sizing : border-box;
-    font-family: $fonts;
+  margin     : 0;
+  padding    : 0;
+  box-sizing : border-box;
+  font-family: $fonts;
 
 }
 
 html {
-    font-family        : $fonts;
-    overscroll-behavior: contain;
+  font-family        : $fonts;
+  overscroll-behavior: contain;
 }
 
 body {
-    background-color: var(--white);
-    min-height      : 100vh;
-    color           : #333;
-    padding         : 15px;
-    overflow-x      : hidden;
+  background-color: var(--white);
+  min-height      : 100vh;
+  color           : #333;
+  padding         : 15px;
+  overflow-x      : hidden;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /**
@@ -39,39 +39,39 @@ a {
  * 
 */
 body::-webkit-scrollbar {
-    width: 15px
+  width: 15px
 }
 
 body::-webkit-scrollbar-track {
-    background : var(--white);
-    border-left: 1px solid var(--cultured);
+  background : var(--white);
+  border-left: 1px solid var(--cultured);
 }
 
 body::-webkit-scrollbar-thumb {
-    background   : hsl(0, 0%, 80%);
-    border       : 3px solid var(--white);
-    border-radius: 10px;
+  background   : hsl(0, 0%, 80%);
+  border       : 3px solid var(--white);
+  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background: hsl(0, 0%, 70%);
+  background: hsl(0, 0%, 70%);
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 button,
 input,
 input::placeholder {
 
-    font: inherit;
+  font: inherit;
 }
 
 button {
-    background: none;
-    border    : none;
-    cursor    : pointer;
+  background: none;
+  border    : none;
+  cursor    : pointer;
 }
 
 img,
@@ -79,24 +79,26 @@ svg,
 button,
 input,
 a {
-    display: block;
+  display: block;
 }
 
 span {
-    display: inline-block;
+  display: inline-block;
 }
 
 svg {
-    min-width : rem(16);
-    min-height: rem(16);
+  min-width   : rem(16);
+  min-height  : rem(16);
+  stroke-width: var(--icon-stroke-width);
 }
 
 input {
-    width: 100%;
+  @extend %wFull;
+  transition: color var(--transition-timing), outline var(--transition-timing);
 }
 
 p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 
@@ -106,78 +108,5 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $head-fonts;
+  font-family: $head-fonts;
 }
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
-
-
-/*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
-@import "../components/overlay";
-@import "../components/modal";
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
-
-/*-----------------------------------*\
-  #BANNER
-\*-----------------------------------*/
-
-/*-----------------------------------*\
-  #CATEGORY
-\*-----------------------------------*/
-
-
-
-/*-----------------------------------*\
-  #SIDEBAR
-\*-----------------------------------*/
-
-/*-----------------------------------*\
-  #PRODUCT MINIMAL
-\*-----------------------------------*/
-
-/*-----------------------------------*\
-  #PRODUCT FEATURED
-\*-----------------------------------*/
-
-/*-----------------------------------*\
-  #PRODUCT GRID
-\*-----------------------------------*/
-
-
-/*-----------------------------------*\
-  #TESTIMONIAL
-\*-----------------------------------*/
-
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
-
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/

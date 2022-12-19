@@ -1,0 +1,12 @@
+.btn {
+    @extend %btn;
+    font-weight: var(--weight-400);
+}
+
+.btn-dark {
+    @extend %btn;
+    background-color: var(--eerie-black);
+    color           : var(--white);
+
+
+}

@@ -4,8 +4,8 @@
 \*-----------------------------------*/
 :root {
   /**
-   * colors
-   */
+     * colors
+     */
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
   --eerie-black: hsl(0, 0%, 13%);
@@ -19,8 +19,8 @@
   --onyx: hsl(0, 0%, 27%);
   --bg-light: hsla(0, 0%, 0%, 0.5);
   /**
-   * typography
-   */
+     * typography
+     */
   --fs-1: 1.563rem;
   --fs-2: 1.375rem;
   --fs-3: 1.25rem;
@@ -38,17 +38,19 @@
   --weight-600: 600;
   --weight-700: 700;
   /**
-   * border-radius
-   */
+     * border-radius
+     */
   --border-radius-md: 10px;
   --border-radius-sm: 5px;
   /**
-   * transition 
-   */
-  --transition-timing: 0.2s ease;
+     * transition 
+     */
+  --transition-timing: 0.3s ease;
+  /* SVG */
+  --icon-stroke-width: 50px;
 }
 
-.modal, .overlay, .modal__close-overlay {
+.modal, .overlay, input, .modal__close-overlay {
   width: 100%;
 }
 
@@ -56,7 +58,7 @@
   height: 100%;
 }
 
-.modal__close-overlay {
+.modal__close-btn, .modal__close-overlay {
   position: absolute;
 }
 
@@ -77,9 +79,6 @@
   left: 0;
 }
 
-/** 
-=== FLEX
-*/
 .modal {
   display: flex;
 }
@@ -89,9 +88,13 @@
   align-items: center;
 }
 
-/** 
-    === Component
-*/
+.btn-dark, .btn-newsletter, .btn {
+  padding: 10px 14px;
+  border-radius: var(--border-radius-sm);
+  border: none;
+  font-size: var(--fs-7);
+}
+
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
@@ -178,10 +181,11 @@ span {
 svg {
   min-width: 1rem;
   min-height: 1rem;
+  stroke-width: var(--icon-stroke-width);
 }
 
 input {
-  width: 100%;
+  transition: color var(--transition-timing), outline var(--transition-timing);
 }
 
 p {
@@ -195,6 +199,15 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+.btn {
+  font-weight: var(--weight-400);
+}
+
+.btn-dark, .btn-newsletter {
+  background-color: var(--eerie-black);
+  color: var(--white);
 }
 
 /*-----------------------------------*\
@@ -248,6 +261,71 @@ h6 {
   /*   animation       : scaleUp 0.5s ease-in-out 5s forwards; */
 }
 
+.modal__close-btn {
+  top: 15px;
+  right: 15px;
+  background-color: var(--salmon-pink);
+  color: var(--white);
+  font-size: 16px;
+  padding: 5px;
+  border-radius: var(--border-radius-sm);
+  transition: opacity var(--transition-timing);
+}
+.modal__close-btn:hover {
+  opacity: 0.9;
+}
+.modal__close-btn svg {
+  --icon-stroke-width: 70px;
+}
+
+.newsletter-img {
+  display: none;
+}
+.newsletter-img img {
+  width: 400px;
+}
+
+.newsletter {
+  padding: 3.125rem 1.875rem;
+  text-align: center;
+}
+
+.newsletter__header {
+  margin-bottom: 1.25rem;
+}
+
+.newsletter__title {
+  color: var(--onyx);
+  font-size: var(--fs-2);
+  font-weight: var(--weight-600);
+  margin-bottom: 0.625rem;
+}
+
+.newsletter__desc,
+.email-field {
+  font-size: var(--fs-7);
+}
+
+.newsletter__desc {
+  color: var(--sonic-silver);
+  line-height: 1.6;
+}
+
+.email-field {
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--cultured);
+  margin-bottom: 1rem;
+}
+.email-field:focus {
+  outline: 1px solid var(--salmon-pink);
+}
+
+.btn-newsletter {
+  font-weight: var(--weight-600);
+  text-transform: uppercase;
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -287,13 +365,6 @@ h6 {
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
-.newsletter-img {
-  display: none;
-}
-.newsletter-img img {
-  width: 400px;
-}
-
 @keyframes popup {
   0% {
     opacity: 0;

@@ -56,9 +56,9 @@
     left: 0;
 }
 
-/** 
-=== FLEX
-*/
+
+// === FLEX
+
 %flex {
     display: flex;
 }
@@ -100,17 +100,16 @@
     justify-content: center;
 }
 
-/** 
-    === Component
-*/
+// === Component
 
 %btn {
-    padding         : 10px 14px;
-    border-radius   : 4px;
-    border          : none;
-    background-color: gray;
+    padding      : 10px 14px;
+    border-radius: var(--border-radius-sm);
+    border       : none;
+    font-size    : var(--fs-7);
 
 }
+
 
 %card {
     color           : rgba(0, 0, 0, 0.75);

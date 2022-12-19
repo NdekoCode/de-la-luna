@@ -38,3 +38,24 @@
     /*   animation       : scaleUp 0.5s ease-in-out 5s forwards; */
 
 }
+
+.modal__close-btn {
+    @extend %posAbsolute;
+    top             : 15px;
+    right           : 15px;
+    background-color: var(--salmon-pink);
+    color           : var(--white);
+    font-size       : 16px;
+    padding         : 5px;
+    border-radius   : var(--border-radius-sm);
+
+    transition: opacity var(--transition-timing);
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    svg {
+        --icon-stroke-width: 70px;
+    }
+}
