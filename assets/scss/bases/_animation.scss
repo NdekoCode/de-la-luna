@@ -21,3 +21,23 @@
         transform: scale(1);
     }
 }
+
+@keyframes slideInOut {
+
+    0%,
+    45%,
+    100% {
+
+        transform : translateX(calc(-100% - 40px));
+        opacity   : 0;
+        visibility: hidden;
+    }
+
+    50%,
+    95% {
+
+        transform : translateX(0);
+        opacity   : 1;
+        visibility: visible;
+    }
+}

@@ -13,10 +13,10 @@
     pointer-events  : none;
     z-index         : 10;
     animation       : popup 0.35s ease-in-out 5s forwards;
-}
 
-.modal.closed {
-    display: none;
+    &.closed {
+        display: none;
+    }
 }
 
 .modal__close-overlay {
