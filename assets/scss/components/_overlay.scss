@@ -4,6 +4,7 @@
 .overlay {
 
     @extend %posFullFixed;
+    @extend %wFull;
     background-color: var(--bg-light);
     opacity         : 0;
     pointer-events  : none;

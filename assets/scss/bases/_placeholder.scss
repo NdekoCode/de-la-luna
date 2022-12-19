@@ -26,15 +26,26 @@
     display: none;
 }
 
-%posFullFixed {
+%posAbsolute {
+    position: absolute;
+}
 
+%posFixed {
     position: fixed;
-    height  : 100vh;
+}
+
+%posRelative {
+    position: relative;
+}
+
+%posFullFixed {
+    @extend %posFixed;
+    height: 100vh;
 }
 
 %posFullAbsolute {
 
-    position: absolute;
+    @extend %posAbsolute;
     @extend %fullRation;
 }
 

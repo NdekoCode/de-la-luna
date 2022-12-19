@@ -11,3 +11,13 @@
         pointer-events: all;
     }
 }
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

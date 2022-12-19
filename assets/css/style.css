@@ -48,7 +48,7 @@
   --transition-timing: 0.2s ease;
 }
 
-.modal__close-overlay {
+.modal, .overlay, .modal__close-overlay {
   width: 100%;
 }
 
@@ -56,13 +56,20 @@
   height: 100%;
 }
 
-.modal, .overlay {
-  position: fixed;
-  height: 100vh;
-}
-
 .modal__close-overlay {
   position: absolute;
+}
+
+.modal, .overlay {
+  position: fixed;
+}
+
+.modal__content {
+  position: relative;
+}
+
+.modal, .overlay {
+  height: 100vh;
 }
 
 .modal__close-overlay, .modal {
@@ -227,6 +234,20 @@ h6 {
   display: none;
 }
 
+.modal__close-overlay {
+  z-index: 1;
+}
+
+.modal__content {
+  max-width: 350px;
+  margin: 1.25rem;
+  z-index: 2;
+  border-radius: var(--border-radius-md);
+  background-color: var(--white);
+  overflow: hidden;
+  /*   animation       : scaleUp 0.5s ease-in-out 5s forwards; */
+}
+
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
@@ -266,6 +287,9 @@ h6 {
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
+.newsletter-img {
+  display: none;
+}
 .newsletter-img img {
   width: 400px;
 }
@@ -280,6 +304,14 @@ h6 {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
   }
 }
 
