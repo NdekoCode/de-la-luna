@@ -67,7 +67,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--white);
   min-height: 100vh;
   color: #333;
   padding: 15px;
@@ -76,6 +76,29 @@ body {
 
 a {
   text-decoration: none;
+}
+
+/**
+ * SCROLLBAR STYLE
+ * 
+*/
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--white);
+  border-left: 1px solid var(--cultured);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(0deg, 0%, 80%);
+  border: 3px solid var(--white);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(0deg, 0%, 70%);
 }
 
 li {
