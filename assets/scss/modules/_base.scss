@@ -69,9 +69,9 @@ input::placeholder {
 }
 
 button {
-    background-color: none;
-    border          : none;
-    cursor          : pointer;
+    background: none;
+    border    : none;
+    cursor    : pointer;
 }
 
 img,
@@ -84,6 +84,11 @@ a {
 
 span {
     display: inline-block;
+}
+
+svg {
+    min-width : rem(16);
+    min-height: rem(16);
 }
 
 input {
@@ -114,40 +119,9 @@ h6 {
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
+@import "../components/overlay";
+@import "../components/modal";
 
-/* 
- * Overlay
-*/
-.overlay {
-    position        : fixed;
-    top             : 0;
-    left            : 0;
-    width           : 100%;
-    height          : 100vh;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    opacity         : 0;
-    pointer-events  : none;
-    z-index         : 15;
-    transition      : 0.75s ease;
-
-    &.active {
-        opacity       : 1;
-        pointer-events: all;
-    }
-}
-
-/* 
- * MODAL
-*/
-.modal {
-    position        : fixed;
-    top             : 0;
-    left            : 0;
-    width           : 100%;
-    height          : 100vh;
-    background-color: hsla(0, 0%, 0%, 0.5);
-    display         : flex;
-}
 
 /*-----------------------------------*\
   #HEADER
