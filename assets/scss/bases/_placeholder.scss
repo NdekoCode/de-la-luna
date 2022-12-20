@@ -107,6 +107,7 @@
     border-radius: var(--border-radius-sm);
     border       : none;
     font-size    : var(--fs-7);
+    transition   : color var(--transition-timing), background-color, var(--transition-timing), border var(--transition-timing);
 
 }
 

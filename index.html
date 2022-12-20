@@ -8,6 +8,8 @@
     <title>Bambino DelaLUNA</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./assets/images/logo/favicon.svg" sizes="any" type="image/svg+xml">
+
     <!-- CUSTOM CSS LINK -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
@@ -20,7 +22,7 @@
 <body>
     <div class="overlay" data-overlay></div>
     <!-- MODAL -->
-    <div class="modal" data-modal>
+    <div class="modal closed" data-modal>
         <div class="modal__close-overlay" data-modal-overlay></div>
         <div class="modal__content">
             <button class="modal__close-btn" data-modal-close>
@@ -46,6 +48,158 @@
             </div>
         </div>
     </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div class="toast notification-toast" data-toast>
+
+        <button class="toast__close-btn" data-toast-close>
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" stroke="inherit" viewBox="0 0 512 512">
+                <title>Close</title>
+                <path fill="none" stroke="currentColor" stroke-width="inherit" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368" />
+            </svg>
+        </button>
+        <div class="toast__banner">
+            <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earings">
+        </div>
+        <div class="toast__detail">
+            <div class="toast__message">
+                Someone in new just bought
+            </div>
+            <h5 class="toast__title">Rose Gold Earrings</h5>
+            <p class="toast__meta">
+                <time datetime="PT2M">2 Minutes</time> ago
+            </p>
+        </div>
+    </div>
+    <!-- HEADER -->
+    <header>
+
+        <div class="header__top">
+            <div class="container">
+                <ul class="header__social-container">
+                    <li>
+                        <a class="social__link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <title>Logo Facebook</title>
+                                <path
+                                    d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16 24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31z"
+                                    fill-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="social__link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <title>Logo Twitter</title>
+                                <path
+                                    d="M496 109.5a201.8 201.8 0 01-56.55 15.3 97.51 97.51 0 0043.33-53.6 197.74 197.74 0 01-62.56 23.5A99.14 99.14 0 00348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 002.54 22.1 280.7 280.7 0 01-203-101.3A95.69 95.69 0 0036 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0135.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 01-25.94 3.4 94.38 94.38 0 01-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0139.5 405.6a203 203 0 01-23.5-1.4A278.68 278.68 0 00166.74 448c181.36 0 280.44-147.7 280.44-275.8 0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 00496 109.5z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="social__link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <title>Logo Instagram</title>
+                                <path
+                                    d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z" />
+                                <path
+                                    d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="social__link" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                                <title>Logo Linkedin</title>
+                                <path
+                                    d="M444.17 32H70.28C49.85 32 32 46.7 32 66.89v374.72C32 461.91 49.85 480 70.28 480h373.78c20.54 0 35.94-18.21 35.94-38.39V66.89C480.12 46.7 464.6 32 444.17 32zm-273.3 373.43h-64.18V205.88h64.18zM141 175.54h-.46c-20.54 0-33.84-15.29-33.84-34.43 0-19.49 13.65-34.42 34.65-34.42s33.85 14.82 34.31 34.42c-.01 19.14-13.31 34.43-34.66 34.43zm264.43 229.89h-64.18V296.32c0-26.14-9.34-44-32.56-44-17.74 0-28.24 12-32.91 23.69-1.75 4.2-2.22 9.92-2.22 15.76v113.66h-64.18V205.88h64.18v27.77c9.34-13.3 23.93-32.44 57.88-32.44 42.13 0 74 27.77 74 87.64z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="header__alert-news">
+                    <p><b>Free shipping</b>
+                        This Week order over -$50
+                    </p>
+                </div>
+                <div class="header__top-actions">
+                    <select name="currency" id="">
+                        <option value="usd">USD $</option>
+                        <option value="FC">FC fc</option>
+                    </select>
+                    <select name="language" id="">
+                        <option value="en-US">English</option>
+                        <option value="fr-FR">Français</option>
+                        <option value="sw-SW">Swahili</option>
+                        <option value="lg-LG">Lingala</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <a href="#" class="header__logo">
+                    <img src="./assets/images/logo/logo-letter.svg" alt="BambinoDelaLUNA">
+                </a>
+                <form class="header__search-container">
+                    <input type="search" name="searcj" id="searcj" class="search-field"
+                        placeholder="Enter your product name..." />
+                    <button class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                            <title>Search</title>
+                            <path d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z" fill="none"
+                                stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10"
+                                stroke-width="32" d="M338.29 338.29L448 448" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="header__user-action">
+                    <a class="action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                            <title>Person</title>
+                            <path d="M344 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" />
+                            <path
+                                d="M256 304c-87 0-175.3 48-191.64 138.6C62.39 453.52 68.57 464 80 464h352c11.44 0 17.62-10.48 15.65-21.4C431.3 352 343 304 256 304z"
+                                fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
+                        </svg>
+                    </a>
+                    <a class="action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                            <title>Heart</title>
+                            <path
+                                d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" />
+                        </svg>
+                        <span class="count">0</span>
+                    </a>
+
+                    <a class="action-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                            <title>Bag Handle</title>
+                            <path
+                                d="M80 176a16 16 0 00-16 16v216c0 30.24 25.76 56 56 56h272c30.24 0 56-24.51 56-54.75V192a16 16 0 00-16-16zM160 176v-32a96 96 0 0196-96h0a96 96 0 0196 96v32"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" />
+                            <path d="M160 224v16a96 96 0 0096 96h0a96 96 0 0096-96v-16" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="32" />
+                        </svg>
+                        <span class="count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <!-- CUSTOM JS LINK -->
     <script src="./assets/js/script.js"></script>
 </body>
