@@ -181,8 +181,8 @@ span {
 }
 
 svg {
-  min-width: 1rem;
-  min-height: 1rem;
+  width: 1rem;
+  height: 1rem;
   stroke-width: var(--icon-stroke-width);
 }
 
