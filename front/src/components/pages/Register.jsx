@@ -1,13 +1,13 @@
 import React from "react";
-import DefaultPage from "./DefaultPage";
+import PageContent from "./PageContent";
 
 const Register = () => {
   return (
-    <DefaultPage>
+    <PageContent>
       <section className="relative bg-white overflow-hidden">
         <img
           className="absolute left-0 top-0"
-          src="flaro-assets/images/sign-in/gradient.svg"
+          src="https://shuffle.dev/flaro-assets/images/sign-in/gradient.svg"
           alt=""
         />
         <div className="relative z-10 flex flex-wrap -m-8">
@@ -18,7 +18,7 @@ const Register = () => {
                   <div className="md:max-w-lg mx-auto pt-16 md:pb-32">
                     <a className="mb-28 inline-block" href="#">
                       <img
-                        src="flaro-assets/logos/flaro-logo-black-xl.svg"
+                        src="https://shuffle.dev/flaro-assets/logos/flaro-logo-black-xl.svg"
                         alt=""
                       />
                     </a>
@@ -142,7 +142,7 @@ const Register = () => {
                     <button className="flex items-center p-4 bg-white hover:bg-gray-50 border rounded-lg transition ease-in-out duration-200">
                       <img
                         className="mr-3"
-                        src="flaro-assets/logos/brands/google.svg"
+                        src="https://shuffle.dev/flaro-assets/logos/brands/google.svg"
                         alt=""
                       />
                       <span className="font-semibold leading-normal">
@@ -154,7 +154,7 @@ const Register = () => {
                     <button className="flex items-center p-4 bg-white hover:bg-gray-50 border rounded-lg transition ease-in-out duration-200">
                       <img
                         className="mr-3"
-                        src="flaro-assets/logos/brands/fb.svg"
+                        src="https://shuffle.dev/flaro-assets/logos/brands/fb.svg"
                         alt=""
                       />
                       <span className="font-semibold leading-normal">
@@ -168,7 +168,7 @@ const Register = () => {
           </div>
         </div>
       </section>
-    </DefaultPage>
+    </PageContent>
   );
 };
 

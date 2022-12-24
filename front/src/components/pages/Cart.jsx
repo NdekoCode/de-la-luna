@@ -1,9 +1,9 @@
 import React from "react";
-import DefaultPage from "./DefaultPage";
+import PageContent from "./PageContent";
 
 const Cart = () => {
   return (
-    <DefaultPage>
+    <PageContent>
       <main className="mx-auto max-w-7xl mt-10 sm:px-4 px-2  overflow-x-hidden">
         <div className="flex justify-center my-6">
           <div className="flex flex-col w-full p-8 text-gray-800 bg-white shadow-lg pin-r pin-y md:w-4/5 lg:w-4/5">
@@ -333,7 +333,7 @@ const Cart = () => {
           </div>
         </div>
       </main>
-    </DefaultPage>
+    </PageContent>
   );
 };
 

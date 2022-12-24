@@ -1,13 +1,13 @@
 import React from "react";
-import DefaultPage from "./DefaultPage";
+import PageContent from "./PageContent";
 
 const FAQ = () => {
   return (
-    <DefaultPage>
+    <PageContent>
       <section className="relative pt-24 pb-28 bg-blueGray-50 overflow-hidden">
         <img
           className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
-          src="flaro-assets/images/faqs/gradient.svg"
+          src="https://shuffle.dev/flaro-assets/images/faqs/gradient.svg"
           alt=""
         />
         <div className="relative z-10 container px-4 mx-auto">
@@ -161,7 +161,7 @@ const FAQ = () => {
           </div>
         </div>
       </section>
-    </DefaultPage>
+    </PageContent>
   );
 };
 

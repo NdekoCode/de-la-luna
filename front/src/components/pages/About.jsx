@@ -1,9 +1,9 @@
 import React from "react";
-import DefaultPage from "./DefaultPage";
+import PageContent from "./PageContent";
 
 const About = () => {
   return (
-    <DefaultPage>
+    <PageContent>
       <section className="pt-24 pb-32 bg-white overflow-hidden">
         <div className="container px-4 mx-auto">
           <h2 className="mb-28 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight md:max-w-lg">
@@ -33,7 +33,7 @@ const About = () => {
                   <div className="relative w-14 h-14 text-2xl text-white font-bold bg-indigo-600 rounded-full">
                     <img
                       className="absolute top-0 left-0"
-                      src="flaro-assets/images/how-it-works/gradient.svg"
+                      src="https://shuffle.dev/flaro-assets/images/how-it-works/gradient.svg"
                       alt=""
                     />
                     <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -89,7 +89,7 @@ const About = () => {
       <section className="relative pt-24 pb-28 bg-white overflow-hidden">
         <img
           className="absolute right-0 bottom-0"
-          src="flaro-assets/images/applications/gradient.svg"
+          src="https://shuffle.dev/flaro-assets/images/applications/gradient.svg"
           alt=""
         />
         <div className="relative z-10 container px-4 mx-auto">
@@ -108,7 +108,7 @@ const About = () => {
                 </p>
                 <a className="mb-20 inline-block" href="#">
                   <img
-                    src="flaro-assets/images/applications/app-store-round.png"
+                    src="https://shuffle.dev/flaro-assets/images/applications/app-store-round.png"
                     alt=""
                   />
                 </a>
@@ -208,7 +208,7 @@ const About = () => {
             <div className="w-full md:w-1/2 p-8 self-end">
               <img
                 className="relative top-28 transform hover:scale-105 transition ease-in-out duration-1000"
-                src="flaro-assets/images/applications/iphone.png"
+                src="https://shuffle.dev/flaro-assets/images/applications/iphone.png"
                 alt=""
               />
             </div>
@@ -218,73 +218,6 @@ const About = () => {
 
       <section className="bg-blueGray-50">
         <div className="container mx-auto overflow-hidden">
-          <div className="flex items-center justify-between px-4 py-5 bg-blueGray-50">
-            <div className="w-auto">
-              <div className="flex flex-wrap items-center">
-                <div className="w-auto mr-14">
-                  <a href="#">
-                    <img src="flaro-assets/logos/flaro-logo-black.svg" alt="" />
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="w-auto">
-              <div className="flex flex-wrap items-center">
-                <div className="w-auto hidden lg:block">
-                  <ul className="flex items-center mr-16">
-                    <li className="mr-9 font-medium hover:text-gray-700">
-                      <a href="#">Features</a>
-                    </li>
-                    <li className="mr-9 font-medium hover:text-gray-700">
-                      <a href="#">Solutions</a>
-                    </li>
-                    <li className="mr-9 font-medium hover:text-gray-700">
-                      <a href="#">Resources</a>
-                    </li>
-                    <li className="font-medium hover:text-gray-700">
-                      <a href="#">Pricing</a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="w-auto hidden lg:block">
-                  <div className="inline-block">
-                    <button
-                      className="py-3 px-5 w-full text-white font-semibold border border-indigo-700 rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200"
-                      type="button"
-                    >
-                      Try 14 Days Free Trial
-                    </button>
-                  </div>
-                </div>
-                <div className="w-auto lg:hidden">
-                  <a href="#">
-                    <svg
-                      className="navbar-burger text-indigo-600"
-                      width={51}
-                      height={51}
-                      viewBox="0 0 56 56"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        width={56}
-                        height={56}
-                        rx={28}
-                        fill="currentColor"
-                      />
-                      <path
-                        d="M37 32H19M37 24H19"
-                        stroke="white"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
           <div className="hidden navbar-menu fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
             <div className="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80" />
             <nav className="relative z-10 px-9 pt-8 bg-white h-full overflow-y-auto">
@@ -294,7 +227,7 @@ const About = () => {
                     <div className="w-auto p-2">
                       <a className="inline-block" href="#">
                         <img
-                          src="flaro-assets/logos/flaro-logo-black.svg"
+                          src="https://shuffle.dev/flaro-assets/logos/flaro-logo-black.svg"
                           alt=""
                         />
                       </a>
@@ -447,20 +380,29 @@ const About = () => {
                 </p>
                 <div className="flex flex-wrap -m-3">
                   <div className="w-auto p-3">
-                    <img src="flaro-assets/logos/brands/brand.png" alt="" />
+                    <img
+                      src="https://shuffle.dev/flaro-assets/logos/brands/brand.png"
+                      alt=""
+                    />
                   </div>
                   <div className="w-auto p-3">
-                    <img src="flaro-assets/logos/brands/brand2.png" alt="" />
+                    <img
+                      src="https://shuffle.dev/flaro-assets/logos/brands/brand2.png"
+                      alt=""
+                    />
                   </div>
                   <div className="w-auto p-3">
-                    <img src="flaro-assets/logos/brands/brand3.png" alt="" />
+                    <img
+                      src="https://shuffle.dev/flaro-assets/logos/brands/brand3.png"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
               <div className="w-full md:w-1/2 p-8">
                 <img
                   className="transform hover:-translate-y-16 transition ease-in-out duration-1000"
-                  src="flaro-assets/images/headers/header.png"
+                  src="https://shuffle.dev/flaro-assets/images/headers/header.png"
                   alt=""
                 />
               </div>
@@ -471,7 +413,7 @@ const About = () => {
       <section className="relative py-32 bg-white overflow-hidden">
         <img
           className="absolute left-0 top-0"
-          src="flaro-assets/images/features/elipse.svg"
+          src="https://shuffle.dev/flaro-assets/images/features/elipse.svg"
           alt=""
         />
         <div className="container px-4 mx-auto">
@@ -489,7 +431,7 @@ const About = () => {
             <div className="w-full md:w-1/2 p-8">
               <img
                 className="transform hover:-translate-y-16 transition ease-in-out duration-1000"
-                src="flaro-assets/images/features/feature.png"
+                src="https://shuffle.dev/flaro-assets/images/features/feature.png"
                 alt=""
               />
             </div>
@@ -518,19 +460,19 @@ const About = () => {
                 <div className="flex flex-wrap">
                   <div className="w-auto">
                     <img
-                      src="flaro-assets/images/cta/avatar-circle.png"
+                      src="https://shuffle.dev/flaro-assets/images/cta/avatar-circle.png"
                       alt=""
                     />
                   </div>
                   <div className="w-auto -ml-3">
                     <img
-                      src="flaro-assets/images/cta/avatar-circle2.png"
+                      src="https://shuffle.dev/flaro-assets/images/cta/avatar-circle2.png"
                       alt=""
                     />
                   </div>
                   <div className="w-auto -ml-3">
                     <img
-                      src="flaro-assets/images/cta/avatar-circle3.png"
+                      src="https://shuffle.dev/flaro-assets/images/cta/avatar-circle3.png"
                       alt=""
                     />
                   </div>
@@ -547,7 +489,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </DefaultPage>
+    </PageContent>
   );
 };
 

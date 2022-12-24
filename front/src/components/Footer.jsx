@@ -189,7 +189,10 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between items-center py-6 -m-4">
           <div className="w-auto p-4">
             <a href="#">
-              <img src="flaro-assets/logos/flaro-logo-black.svg" alt="" />
+              <img
+                src="https://shuffle.dev/flaro-assets/logos/flaro-logo-black.svg"
+                alt=""
+              />
             </a>
           </div>
           <div className="w-auto p-4">

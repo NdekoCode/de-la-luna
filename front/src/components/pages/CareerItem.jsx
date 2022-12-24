@@ -1,9 +1,9 @@
 import React from "react";
-import DefaultPage from "./DefaultPage";
+import PageContent from "./PageContent";
 
 const CareerItem = () => {
   return (
-    <DefaultPage>
+    <PageContent>
       <section className="py-24 bg-blueGray-50 overflow-hidden">
         <div className="container px-4 mx-auto">
           <h2 className="mb-5 text-6xl md:text-8xl xl:text-10xl text-center font-bold font-heading font-heading tracking-px-n leading-none">
@@ -20,7 +20,7 @@ const CareerItem = () => {
                   <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl">
                     <img
                       className="absolute left-0 top-0"
-                      src="flaro-assets/images/career/gradient.svg"
+                      src="https://shuffle.dev/flaro-assets/images/career/gradient.svg"
                       alt=""
                     />
                     <div className="relative z-10 flex flex-col justify-between h-full">
@@ -36,7 +36,7 @@ const CareerItem = () => {
                       </div>
                       <div className="flex-1">
                         <img
-                          src="flaro-assets/logos/brands/brand-medium.png"
+                          src="https://shuffle.dev/flaro-assets/logos/brands/brand-medium.png"
                           alt=""
                         />
                       </div>
@@ -49,7 +49,7 @@ const CareerItem = () => {
                   <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl">
                     <img
                       className="absolute left-0 top-0"
-                      src="flaro-assets/images/career/gradient.svg"
+                      src="https://shuffle.dev/flaro-assets/images/career/gradient.svg"
                       alt=""
                     />
                     <div className="relative z-10 flex flex-col justify-between h-full">
@@ -65,7 +65,7 @@ const CareerItem = () => {
                       </div>
                       <div className="flex-1">
                         <img
-                          src="flaro-assets/logos/brands/brand-medium2.png"
+                          src="https://shuffle.dev/flaro-assets/logos/brands/brand-medium2.png"
                           alt=""
                         />
                       </div>
@@ -78,7 +78,7 @@ const CareerItem = () => {
                   <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl">
                     <img
                       className="absolute left-0 top-0"
-                      src="flaro-assets/images/career/gradient.svg"
+                      src="https://shuffle.dev/flaro-assets/images/career/gradient.svg"
                       alt=""
                     />
                     <div className="relative z-10 flex flex-col justify-between h-full">
@@ -94,7 +94,7 @@ const CareerItem = () => {
                       </div>
                       <div className="flex-1">
                         <img
-                          src="flaro-assets/logos/brands/brand-medium3.png"
+                          src="https://shuffle.dev/flaro-assets/logos/brands/brand-medium3.png"
                           alt=""
                         />
                       </div>
@@ -107,7 +107,7 @@ const CareerItem = () => {
                   <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl">
                     <img
                       className="absolute left-0 top-0"
-                      src="flaro-assets/images/career/gradient.svg"
+                      src="https://shuffle.dev/flaro-assets/images/career/gradient.svg"
                       alt=""
                     />
                     <div className="relative z-10 flex flex-col justify-between h-full">
@@ -123,7 +123,7 @@ const CareerItem = () => {
                       </div>
                       <div className="flex-1">
                         <img
-                          src="flaro-assets/logos/brands/brand-medium4.png"
+                          src="https://shuffle.dev/flaro-assets/logos/brands/brand-medium4.png"
                           alt=""
                         />
                       </div>
@@ -136,7 +136,7 @@ const CareerItem = () => {
                   <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl shadow-9xl">
                     <img
                       className="absolute left-0 top-0"
-                      src="flaro-assets/images/career/gradient.svg"
+                      src="https://shuffle.dev/flaro-assets/images/career/gradient.svg"
                       alt=""
                     />
                     <div className="relative z-10 flex flex-col justify-between h-full">
@@ -152,7 +152,7 @@ const CareerItem = () => {
                       </div>
                       <div className="flex-1">
                         <img
-                          src="flaro-assets/logos/brands/brand-medium5.png"
+                          src="https://shuffle.dev/flaro-assets/logos/brands/brand-medium5.png"
                           alt=""
                         />
                       </div>
@@ -165,7 +165,7 @@ const CareerItem = () => {
                   <div className="relative p-6 h-full bg-white border hover:border-gray-300 rounded-xl">
                     <img
                       className="absolute left-0 top-0"
-                      src="flaro-assets/images/career/gradient.svg"
+                      src="https://shuffle.dev/flaro-assets/images/career/gradient.svg"
                       alt=""
                     />
                     <div className="relative z-10 flex flex-col justify-between h-full">
@@ -181,7 +181,7 @@ const CareerItem = () => {
                       </div>
                       <div className="flex-1">
                         <img
-                          src="flaro-assets/logos/brands/brand-medium6.png"
+                          src="https://shuffle.dev/flaro-assets/logos/brands/brand-medium6.png"
                           alt=""
                         />
                       </div>
@@ -214,7 +214,7 @@ const CareerItem = () => {
           </div>
         </div>
       </section>
-    </DefaultPage>
+    </PageContent>
   );
 };
 

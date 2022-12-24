@@ -1,10 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import RedirectAuthenticated from "./components/Auth/RedirectAuthenticated";
+import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 import routes from "./components/utilities/routes";
 
 function App() {
   return (
     <>
+      <NavBar />
       <Routes>
         {routes.map(({ path, protect, component }, index) => {
           if (protect) {
@@ -27,6 +30,7 @@ function App() {
           );
         })}
       </Routes>
+      <Footer />
     </>
   );
 }

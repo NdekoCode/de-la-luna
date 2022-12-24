@@ -1,9 +1,9 @@
 import React from "react";
-import DefaultPage from "./DefaultPage";
+import PageContent from "./PageContent";
 
 const Order = () => {
   return (
-    <DefaultPage>
+    <PageContent>
       <section className="pt-12 pb-24 bg-blueGray-100 overflow-hidden">
         <div className="container px-4 mx-auto">
           <ul className="flex flex-wrap items-center mb-10 xl:mb-0">
@@ -417,7 +417,7 @@ const Order = () => {
           </div>
         </div>
       </section>
-    </DefaultPage>
+    </PageContent>
   );
 };
 

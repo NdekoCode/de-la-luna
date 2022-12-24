@@ -1,12 +1,13 @@
 import React from "react";
 import Footer from "../Footer";
 import NavBar from "../NavBar";
+import PageContent from "./PageContent";
 
-const DefaultPage = ({ children }) => {
+const DefaultPage = () => {
   return (
     <>
       <NavBar />
-      {children}
+      <PageContent />
       <Footer />
     </>
   );

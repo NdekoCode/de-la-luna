@@ -1,9 +1,9 @@
 import React from "react";
-import DefaultPage from "./DefaultPage";
+import PageContent from "./PageContent";
 
 const Blog = () => {
   return (
-    <DefaultPage>
+    <PageContent>
       <section className="pt-24 pb-36 bg-white overflow-hidden">
         <div className="container px-4 mx-auto">
           <h2 className="mb-4 text-6xl md:text-7xl text-center font-bold font-heading font-heading tracking-px-n leading-tight">
@@ -20,7 +20,7 @@ const Blog = () => {
                   <div className="overflow-hidden rounded-xl">
                     <img
                       className="transform hover:scale-105 transition ease-in-out duration-1000"
-                      src="flaro-assets/images/blog/blog.png"
+                      src="https://shuffle.dev/flaro-assets/images/blog/blog.png"
                       alt=""
                     />
                   </div>
@@ -44,7 +44,7 @@ const Blog = () => {
                       <div className="flex flex-wrap items-center -m-1">
                         <div className="w-auto p-1">
                           <img
-                            src="flaro-assets/images/blog/blog-avatar.png"
+                            src="https://shuffle.dev/flaro-assets/images/blog/blog-avatar.png"
                             alt=""
                           />
                         </div>
@@ -65,7 +65,7 @@ const Blog = () => {
                   <div className="overflow-hidden rounded-xl">
                     <img
                       className="transform hover:scale-105 transition ease-in-out duration-1000"
-                      src="flaro-assets/images/blog/blog2.png"
+                      src="https://shuffle.dev/flaro-assets/images/blog/blog2.png"
                       alt=""
                     />
                   </div>
@@ -89,7 +89,7 @@ const Blog = () => {
                       <div className="flex flex-wrap items-center -m-1">
                         <div className="w-auto p-1">
                           <img
-                            src="flaro-assets/images/blog/blog-avatar2.png"
+                            src="https://shuffle.dev/flaro-assets/images/blog/blog-avatar2.png"
                             alt=""
                           />
                         </div>
@@ -110,7 +110,7 @@ const Blog = () => {
                   <div className="overflow-hidden rounded-xl">
                     <img
                       className="transform hover:scale-105 transition ease-in-out duration-1000"
-                      src="flaro-assets/images/blog/blog3.png"
+                      src="https://shuffle.dev/flaro-assets/images/blog/blog3.png"
                       alt=""
                     />
                   </div>
@@ -135,7 +135,7 @@ const Blog = () => {
                       <div className="flex flex-wrap items-center -m-1">
                         <div className="w-auto p-1">
                           <img
-                            src="flaro-assets/images/blog/blog-avatar3.png"
+                            src="https://shuffle.dev/flaro-assets/images/blog/blog-avatar3.png"
                             alt=""
                           />
                         </div>
@@ -156,7 +156,7 @@ const Blog = () => {
                   <div className="overflow-hidden rounded-xl">
                     <img
                       className="transform hover:scale-105 transition ease-in-out duration-1000"
-                      src="flaro-assets/images/blog/blog4.png"
+                      src="https://shuffle.dev/flaro-assets/images/blog/blog4.png"
                       alt=""
                     />
                   </div>
@@ -181,7 +181,7 @@ const Blog = () => {
                       <div className="flex flex-wrap items-center -m-1">
                         <div className="w-auto p-1">
                           <img
-                            src="flaro-assets/images/blog/blog-avatar4.png"
+                            src="https://shuffle.dev/flaro-assets/images/blog/blog-avatar4.png"
                             alt=""
                           />
                         </div>
@@ -199,7 +199,7 @@ const Blog = () => {
           </div>
         </div>
       </section>
-    </DefaultPage>
+    </PageContent>
   );
 };
 

@@ -8,6 +8,7 @@ const routes = [
   {
     path: "/",
     protect: false,
+
     component: <Navigate to="/login" replace />,
   },
   {
@@ -37,6 +38,31 @@ const routes = [
         <About />
       </Suspense>
     ),
+  },
+];
+export const authLinks = [
+  {
+    path: "/login",
+    title: "Login",
+    protect: false,
+  },
+  {
+    path: "/register",
+    title: "Register",
+    protect: false,
+  },
+];
+export const navRoutes = [
+  {
+    path: "/",
+    protect: false,
+    title: "Home",
+  },
+
+  {
+    path: "/about",
+    title: "About",
+    protect: false,
   },
 ];
 export default routes;

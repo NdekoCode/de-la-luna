@@ -5,7 +5,7 @@ const Pricing = () => {
     <section className="relative py-36 bg-blueGray-50 overflow-hidden">
       <img
         className="absolute top-1/2 right-0 transform -translate-y-1/2"
-        src="flaro-assets/images/pricing/gradient.svg"
+        src="https://shuffle.dev/flaro-assets/images/pricing/gradient.svg"
         alt=""
       />
       <div className="relative z-10 container px-4 mx-auto">

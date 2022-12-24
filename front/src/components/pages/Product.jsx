@@ -1,9 +1,9 @@
 import React from "react";
-import DefaultPage from "./DefaultPage";
+import PageContent from "./PageContent";
 
 const Product = () => {
   return (
-    <DefaultPage>
+    <PageContent>
       <section className="pt-12 pb-24 bg-blueGray-100 rounded-b-10xl overflow-hidden">
         <div className="container px-4 mx-auto">
           <div className="flex flex-wrap -mx-4">
@@ -347,7 +347,7 @@ const Product = () => {
           </div>
         </div>
       </section>
-    </DefaultPage>
+    </PageContent>
   );
 };
 
