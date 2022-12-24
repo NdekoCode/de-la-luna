@@ -1,8 +1,9 @@
 import React from "react";
+import DefaultPage from "./DefaultPage";
 
 const About = () => {
   return (
-    <>
+    <DefaultPage>
       <section className="pt-24 pb-32 bg-white overflow-hidden">
         <div className="container px-4 mx-auto">
           <h2 className="mb-28 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight md:max-w-lg">
@@ -546,7 +547,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </>
+    </DefaultPage>
   );
 };
 
