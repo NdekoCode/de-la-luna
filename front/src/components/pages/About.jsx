@@ -1,221 +1,19 @@
 import React from "react";
+import avatar1 from "../../assets/images/flaten/avatar-circle.png";
+import avatar2 from "../../assets/images/flaten/avatar-circle2.png";
+import avatar3 from "../../assets/images/flaten/avatar-circle3.png";
+import brand from "../../assets/images/flaten/brand.png";
+import brand2 from "../../assets/images/flaten/brand2.png";
+import brand3 from "../../assets/images/flaten/brand3.png";
+import elipse from "../../assets/images/flaten/elipse.svg";
+import feature from "../../assets/images/flaten/feature.png";
+import gradient from "../../assets/images/flaten/gradient.svg";
+import header from "../../assets/images/flaten/header.png";
 import PageContent from "./PageContent";
 
 const About = () => {
   return (
     <PageContent>
-      <section className="pt-24 pb-32 bg-white overflow-hidden">
-        <div className="container px-4 mx-auto">
-          <h2 className="mb-28 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight md:max-w-lg">
-            We make things easy for your business
-          </h2>
-          <div className="flex flex-wrap -m-8">
-            <div className="w-full md:w-1/2 lg:w-1/4 p-8">
-              <div className="flex flex-wrap items-center mb-7 -m-2">
-                <div className="w-auto p-2">
-                  <div className="relative w-14 h-14 text-2xl font-bold font-heading bg-indigo-100 rounded-full">
-                    <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      1
-                    </span>
-                  </div>
-                </div>
-                <div className="flex-1 p-2">
-                  <div className="w-full h-px bg-gray-200" />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold leading-normal md:max-w-xs">
-                A complete UI kit for building your business
-              </h3>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/4 p-8">
-              <div className="flex flex-wrap items-center mb-7 -m-2">
-                <div className="w-auto p-2">
-                  <div className="relative w-14 h-14 text-2xl text-white font-bold bg-indigo-600 rounded-full">
-                    <img
-                      className="absolute top-0 left-0"
-                      src="https://shuffle.dev/flaro-assets/images/how-it-works/gradient.svg"
-                      alt=""
-                    />
-                    <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      2
-                    </span>
-                  </div>
-                </div>
-                <div className="flex-1 p-2">
-                  <div className="w-full h-px bg-gray-200" />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold leading-normal md:max-w-xs">
-                A complete UI kit for building your business
-              </h3>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/4 p-8">
-              <div className="flex flex-wrap items-center mb-7 -m-2">
-                <div className="w-auto p-2">
-                  <div className="relative w-14 h-14 text-2xl font-bold font-heading bg-indigo-100 rounded-full">
-                    <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      3
-                    </span>
-                  </div>
-                </div>
-                <div className="flex-1 p-2">
-                  <div className="w-full h-px bg-gray-200" />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold leading-normal md:max-w-xs">
-                A complete UI kit for building your business
-              </h3>
-            </div>
-            <div className="w-full md:w-1/2 lg:w-1/4 p-8">
-              <div className="flex flex-wrap items-center mb-7 -m-2">
-                <div className="w-auto p-2">
-                  <div className="relative w-14 h-14 text-2xl font-bold font-heading bg-indigo-100 rounded-full">
-                    <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      4
-                    </span>
-                  </div>
-                </div>
-                <div className="flex-1 p-2">
-                  <div className="w-full h-px bg-gray-200" />
-                </div>
-              </div>
-              <h3 className="text-xl font-semibold leading-normal md:max-w-xs">
-                A complete UI kit for building your business
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="relative pt-24 pb-28 bg-white overflow-hidden">
-        <img
-          className="absolute right-0 bottom-0"
-          src="https://shuffle.dev/flaro-assets/images/applications/gradient.svg"
-          alt=""
-        />
-        <div className="relative z-10 container px-4 mx-auto">
-          <div className="flex flex-wrap lg:items-center -m-8">
-            <div className="w-full md:w-1/2 p-8">
-              <div className="md:max-w-2xl">
-                <p className="mb-7 text-sm text-indigo-600 font-semibold uppercase">
-                  👋 Meet new Flaro
-                </p>
-                <h2 className="mb-8 text-6xl md:text-8xl xl:text-10xl font-bold font-heading tracking-px-n leading-none">
-                  Start with ease,Grow your business
-                </h2>
-                <p className="mb-10 text-lg text-gray-600 font-medium leading-normal md:max-w-md">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Malesuada tellus vestibulum, commodo pulvinar.
-                </p>
-                <a className="mb-20 inline-block" href="#">
-                  <img
-                    src="https://shuffle.dev/flaro-assets/images/applications/app-store-round.png"
-                    alt=""
-                  />
-                </a>
-                <h3 className="mb-3 text-gray-900 font-bold font-heading">
-                  Trusted by 1M+ customers
-                </h3>
-                <div className="flex flex-wrap items-center -m-1">
-                  <div className="w-auto p-1">
-                    <div className="flex flex-wrap -m-0.5">
-                      <div className="w-auto p-0.5">
-                        <svg
-                          width={17}
-                          height={16}
-                          viewBox="0 0 17 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.707 1.21267C8.02812 0.224357 9.42632 0.224357 9.74744 1.21267L10.8948 4.74387C11.0384 5.18586 11.4503 5.48511 11.915 5.48511H15.6279C16.6671 5.48511 17.0992 6.81488 16.2585 7.42569L13.2547 9.60809C12.8787 9.88126 12.7214 10.3654 12.865 10.8074L14.0123 14.3386C14.3335 15.327 13.2023 16.1488 12.3616 15.538L9.35775 13.3556C8.98178 13.0824 8.47266 13.0824 8.09669 13.3556L5.09287 15.538C4.25216 16.1488 3.12099 15.327 3.44211 14.3386L4.58947 10.8074C4.73308 10.3654 4.57575 9.88126 4.19978 9.60809L1.19596 7.42569C0.355248 6.81488 0.787317 5.48511 1.82649 5.48511H5.53942C6.00415 5.48511 6.41603 5.18586 6.55964 4.74387L7.707 1.21267Z"
-                            fill="#6366F1"
-                          />
-                        </svg>
-                      </div>
-                      <div className="w-auto p-0.5">
-                        <svg
-                          width={17}
-                          height={16}
-                          viewBox="0 0 17 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.707 1.21267C8.02812 0.224357 9.42632 0.224357 9.74744 1.21267L10.8948 4.74387C11.0384 5.18586 11.4503 5.48511 11.915 5.48511H15.6279C16.6671 5.48511 17.0992 6.81488 16.2585 7.42569L13.2547 9.60809C12.8787 9.88126 12.7214 10.3654 12.865 10.8074L14.0123 14.3386C14.3335 15.327 13.2023 16.1488 12.3616 15.538L9.35775 13.3556C8.98178 13.0824 8.47266 13.0824 8.09669 13.3556L5.09287 15.538C4.25216 16.1488 3.12099 15.327 3.44211 14.3386L4.58947 10.8074C4.73308 10.3654 4.57575 9.88126 4.19978 9.60809L1.19596 7.42569C0.355248 6.81488 0.787317 5.48511 1.82649 5.48511H5.53942C6.00415 5.48511 6.41603 5.18586 6.55964 4.74387L7.707 1.21267Z"
-                            fill="#6366F1"
-                          />
-                        </svg>
-                      </div>
-                      <div className="w-auto p-0.5">
-                        <svg
-                          width={17}
-                          height={16}
-                          viewBox="0 0 17 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.707 1.21267C8.02812 0.224357 9.42632 0.224357 9.74744 1.21267L10.8948 4.74387C11.0384 5.18586 11.4503 5.48511 11.915 5.48511H15.6279C16.6671 5.48511 17.0992 6.81488 16.2585 7.42569L13.2547 9.60809C12.8787 9.88126 12.7214 10.3654 12.865 10.8074L14.0123 14.3386C14.3335 15.327 13.2023 16.1488 12.3616 15.538L9.35775 13.3556C8.98178 13.0824 8.47266 13.0824 8.09669 13.3556L5.09287 15.538C4.25216 16.1488 3.12099 15.327 3.44211 14.3386L4.58947 10.8074C4.73308 10.3654 4.57575 9.88126 4.19978 9.60809L1.19596 7.42569C0.355248 6.81488 0.787317 5.48511 1.82649 5.48511H5.53942C6.00415 5.48511 6.41603 5.18586 6.55964 4.74387L7.707 1.21267Z"
-                            fill="#6366F1"
-                          />
-                        </svg>
-                      </div>
-                      <div className="w-auto p-0.5">
-                        <svg
-                          width={17}
-                          height={16}
-                          viewBox="0 0 17 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.707 1.21267C8.02812 0.224357 9.42632 0.224357 9.74744 1.21267L10.8948 4.74387C11.0384 5.18586 11.4503 5.48511 11.915 5.48511H15.6279C16.6671 5.48511 17.0992 6.81488 16.2585 7.42569L13.2547 9.60809C12.8787 9.88126 12.7214 10.3654 12.865 10.8074L14.0123 14.3386C14.3335 15.327 13.2023 16.1488 12.3616 15.538L9.35775 13.3556C8.98178 13.0824 8.47266 13.0824 8.09669 13.3556L5.09287 15.538C4.25216 16.1488 3.12099 15.327 3.44211 14.3386L4.58947 10.8074C4.73308 10.3654 4.57575 9.88126 4.19978 9.60809L1.19596 7.42569C0.355248 6.81488 0.787317 5.48511 1.82649 5.48511H5.53942C6.00415 5.48511 6.41603 5.18586 6.55964 4.74387L7.707 1.21267Z"
-                            fill="#6366F1"
-                          />
-                        </svg>
-                      </div>
-                      <div className="w-auto p-0.5">
-                        <svg
-                          width={17}
-                          height={16}
-                          viewBox="0 0 17 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7.707 1.21267C8.02812 0.224357 9.42632 0.224357 9.74744 1.21267L10.8948 4.74387C11.0384 5.18586 11.4503 5.48511 11.915 5.48511H15.6279C16.6671 5.48511 17.0992 6.81488 16.2585 7.42569L13.2547 9.60809C12.8787 9.88126 12.7214 10.3654 12.865 10.8074L14.0123 14.3386C14.3335 15.327 13.2023 16.1488 12.3616 15.538L9.35775 13.3556C8.98178 13.0824 8.47266 13.0824 8.09669 13.3556L5.09287 15.538C4.25216 16.1488 3.12099 15.327 3.44211 14.3386L4.58947 10.8074C4.73308 10.3654 4.57575 9.88126 4.19978 9.60809L1.19596 7.42569C0.355248 6.81488 0.787317 5.48511 1.82649 5.48511H5.53942C6.00415 5.48511 6.41603 5.18586 6.55964 4.74387L7.707 1.21267Z"
-                            fill="#6366F1"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="w-auto p-1">
-                    <div className="flex flex-wrap -m-0.5">
-                      <div className="w-auto p-0.5">
-                        <p className="text-gray-900 font-bold">4.2/5</p>
-                      </div>
-                      <div className="w-auto p-0.5">
-                        <p className="text-gray-600 font-medium">
-                          (45k Reviews)
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="w-full md:w-1/2 p-8 self-end">
-              <img
-                className="relative top-28 transform hover:scale-105 transition ease-in-out duration-1000"
-                src="https://shuffle.dev/flaro-assets/images/applications/iphone.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="bg-blueGray-50">
         <div className="container mx-auto overflow-hidden">
           <div className="hidden navbar-menu fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50">
@@ -224,14 +22,6 @@ const About = () => {
               <div className="flex flex-wrap justify-between h-full">
                 <div className="w-full">
                   <div className="flex items-center justify-between -m-2">
-                    <div className="w-auto p-2">
-                      <a className="inline-block" href="#">
-                        <img
-                          src="https://shuffle.dev/flaro-assets/logos/flaro-logo-black.svg"
-                          alt=""
-                        />
-                      </a>
-                    </div>
                     <div className="w-auto p-2">
                       <a className="navbar-burger" href="#">
                         <svg
@@ -380,30 +170,21 @@ const About = () => {
                 </p>
                 <div className="flex flex-wrap -m-3">
                   <div className="w-auto p-3">
-                    <img
-                      src="https://shuffle.dev/flaro-assets/logos/brands/brand.png"
-                      alt=""
-                    />
+                    <img src={brand} alt="Brand" />
                   </div>
                   <div className="w-auto p-3">
-                    <img
-                      src="https://shuffle.dev/flaro-assets/logos/brands/brand2.png"
-                      alt=""
-                    />
+                    <img src={brand2} alt="Brand" />
                   </div>
                   <div className="w-auto p-3">
-                    <img
-                      src="https://shuffle.dev/flaro-assets/logos/brands/brand3.png"
-                      alt=""
-                    />
+                    <img src={brand3} alt="Brand" />
                   </div>
                 </div>
               </div>
               <div className="w-full md:w-1/2 p-8">
                 <img
-                  className="transform hover:-translate-y-16 transition ease-in-out duration-1000"
-                  src="https://shuffle.dev/flaro-assets/images/headers/header.png"
-                  alt=""
+                  className="transform hover:-translate-y-3 duration-300  transition ease-in-out "
+                  src={header}
+                  alt="Header image"
                 />
               </div>
             </div>
@@ -411,11 +192,7 @@ const About = () => {
         </div>
       </section>
       <section className="relative py-32 bg-white overflow-hidden">
-        <img
-          className="absolute left-0 top-0"
-          src="https://shuffle.dev/flaro-assets/images/features/elipse.svg"
-          alt=""
-        />
+        <img className="absolute left-0 top-0" src={elipse} alt="Gradient" />
         <div className="container px-4 mx-auto">
           <div className="flex flex-wrap items-center -m-8">
             <div className="w-full md:w-1/2 p-8">
@@ -430,9 +207,9 @@ const About = () => {
             </div>
             <div className="w-full md:w-1/2 p-8">
               <img
-                className="transform hover:-translate-y-16 transition ease-in-out duration-1000"
-                src="https://shuffle.dev/flaro-assets/images/features/feature.png"
-                alt=""
+                className="transform hover:-translate-y-3 duration-300 transition ease-in-out "
+                src={feature}
+                alt="Feauture"
               />
             </div>
           </div>
@@ -459,22 +236,13 @@ const About = () => {
               <div className="w-auto p-1">
                 <div className="flex flex-wrap">
                   <div className="w-auto">
-                    <img
-                      src="https://shuffle.dev/flaro-assets/images/cta/avatar-circle.png"
-                      alt=""
-                    />
+                    <img src={avatar1} alt="Avatar" />
                   </div>
                   <div className="w-auto -ml-3">
-                    <img
-                      src="https://shuffle.dev/flaro-assets/images/cta/avatar-circle2.png"
-                      alt=""
-                    />
+                    <img src={avatar2} alt="Avatar" />
                   </div>
                   <div className="w-auto -ml-3">
-                    <img
-                      src="https://shuffle.dev/flaro-assets/images/cta/avatar-circle3.png"
-                      alt=""
-                    />
+                    <img src={avatar3} alt="Avatar" />
                   </div>
                 </div>
               </div>
@@ -485,6 +253,88 @@ const About = () => {
                   <span>other startup founders</span>
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="pt-24 pb-32 bg-white overflow-hidden">
+        <div className="container px-4 mx-auto">
+          <h2 className="mb-28 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight md:max-w-lg">
+            We make things easy for your business
+          </h2>
+          <div className="flex flex-wrap -m-8">
+            <div className="w-full md:w-1/2 lg:w-1/4 p-8">
+              <div className="flex flex-wrap items-center mb-7 -m-2">
+                <div className="w-auto p-2">
+                  <div className="relative w-14 h-14 text-2xl font-bold font-heading bg-indigo-100 rounded-full">
+                    <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      1
+                    </span>
+                  </div>
+                </div>
+                <div className="flex-1 p-2">
+                  <div className="w-full h-px bg-gray-200" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold leading-normal md:max-w-xs">
+                A complete UI kit for building your business
+              </h3>
+            </div>
+            <div className="w-full md:w-1/2 lg:w-1/4 p-8">
+              <div className="flex flex-wrap items-center mb-7 -m-2">
+                <div className="w-auto p-2">
+                  <div className="relative w-14 h-14 text-2xl text-white font-bold bg-indigo-600 rounded-full">
+                    <img
+                      className="absolute top-0 left-0"
+                      src={gradient}
+                      alt="Gradient"
+                    />
+                    <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      2
+                    </span>
+                  </div>
+                </div>
+                <div className="flex-1 p-2">
+                  <div className="w-full h-px bg-gray-200" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold leading-normal md:max-w-xs">
+                A complete UI kit for building your business
+              </h3>
+            </div>
+            <div className="w-full md:w-1/2 lg:w-1/4 p-8">
+              <div className="flex flex-wrap items-center mb-7 -m-2">
+                <div className="w-auto p-2">
+                  <div className="relative w-14 h-14 text-2xl font-bold font-heading bg-indigo-100 rounded-full">
+                    <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      3
+                    </span>
+                  </div>
+                </div>
+                <div className="flex-1 p-2">
+                  <div className="w-full h-px bg-gray-200" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold leading-normal md:max-w-xs">
+                A complete UI kit for building your business
+              </h3>
+            </div>
+            <div className="w-full md:w-1/2 lg:w-1/4 p-8">
+              <div className="flex flex-wrap items-center mb-7 -m-2">
+                <div className="w-auto p-2">
+                  <div className="relative w-14 h-14 text-2xl font-bold font-heading bg-indigo-100 rounded-full">
+                    <span className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      4
+                    </span>
+                  </div>
+                </div>
+                <div className="flex-1 p-2">
+                  <div className="w-full h-px bg-gray-200" />
+                </div>
+              </div>
+              <h3 className="text-xl font-semibold leading-normal md:max-w-xs">
+                A complete UI kit for building your business
+              </h3>
             </div>
           </div>
         </div>

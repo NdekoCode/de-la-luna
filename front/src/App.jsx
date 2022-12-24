@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import RedirectAuthenticated from "./components/Auth/RedirectAuthenticated";
+import RedirectAuthenticated from "./components/auth/RedirectAuthenticated";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import routes from "./components/utilities/routes";

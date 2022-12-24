@@ -4,6 +4,7 @@ import Loading from "../Loading";
 const Login = lazy(() => import("../pages/Login"));
 const Register = lazy(() => import("../pages/Register"));
 const About = lazy(() => import("../pages/About"));
+const Blog = lazy(() => import("../pages/Blog"));
 const routes = [
   {
     path: "/",
@@ -26,6 +27,15 @@ const routes = [
     component: (
       <Suspense fallback={<Loading />}>
         <Register />
+      </Suspense>
+    ),
+  },
+  {
+    path: "/blog",
+    protect: false,
+    component: (
+      <Suspense fallback={<Loading />}>
+        <Blog />
       </Suspense>
     ),
   },
@@ -57,6 +67,12 @@ export const navRoutes = [
     path: "/",
     protect: false,
     title: "Home",
+  },
+
+  {
+    path: "/blog",
+    title: "Blog",
+    protect: false,
   },
 
   {

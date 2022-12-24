@@ -23,7 +23,7 @@ const Register = () => {
                       />
                     </a>
                     <h2 className="mb-32 text-6xl md:text-7xl font-bold font-heading tracking-px-n leading-tight">
-                      Sign in and start saving time today.
+                      Create your account and start saving time today.
                     </h2>
                     <h3 className="mb-9 text-xl font-bold font-heading leading-normal">
                       Why should you join us?
@@ -80,28 +80,88 @@ const Register = () => {
           <div className="w-full md:w-1/2 p-8">
             <div className="p-4 py-16 flex flex-col justify-center bg-blueGray-100 h-full">
               <form className="md:max-w-lg mx-auto">
-                <label className="block mb-4">
-                  <p className="mb-2 text-gray-900 font-semibold leading-normal">
-                    Email Address *
-                  </p>
-                  <input
-                    className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-                    id="signInInput1-1"
-                    type="text"
-                    placeholder="Enter email address"
-                  />
-                </label>
-                <label className="block mb-5">
-                  <p className="mb-2 text-gray-900 font-semibold leading-normal">
-                    Password *
-                  </p>
-                  <input
-                    className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-                    id="signInInput1-2"
-                    type="password"
-                    placeholder="********"
-                  />
-                </label>
+                <div className="md:flex md:gap-x-2">
+                  <div>
+                    <label className="block mb-4">
+                      <p className="mb-2 text-gray-900 font-semibold leading-normal">
+                        FirstName
+                      </p>
+                      <input
+                        className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+                        id="signInInput1-1"
+                        type="text"
+                        placeholder="Enter First name"
+                      />
+                    </label>
+                  </div>
+
+                  <div>
+                    <label className="block mb-4">
+                      <p className="mb-2 text-gray-900 font-semibold leading-normal">
+                        LastName
+                      </p>
+                      <input
+                        className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+                        id="signInInput1-1"
+                        type="text"
+                        placeholder="Enter your last Name"
+                      />
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <label className="block mb-4">
+                    <p className="mb-2 text-gray-900 font-semibold leading-normal">
+                      Email Address *
+                    </p>
+                    <input
+                      className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+                      id="signInInput1-1"
+                      type="text"
+                      placeholder="Enter email address"
+                    />
+                  </label>
+                </div>
+
+                <div>
+                  <label className="block mb-4">
+                    <p className="mb-2 text-gray-900 font-semibold leading-normal">
+                      Phone number
+                    </p>
+                    <input
+                      className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+                      id="signInInput1-1"
+                      type="text"
+                      placeholder="Enter phone Number"
+                    />
+                  </label>
+                </div>
+                <div>
+                  <label className="block mb-5">
+                    <p className="mb-2 text-gray-900 font-semibold leading-normal">
+                      Password *
+                    </p>
+                    <input
+                      className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+                      id="signInInput1-2"
+                      type="password"
+                      placeholder="********"
+                    />
+                  </label>
+                </div>
+                <div>
+                  <label className="block mb-5">
+                    <p className="mb-2 text-gray-900 font-semibold leading-normal">
+                      Confirm Password *
+                    </p>
+                    <input
+                      className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+                      id="signInInput1-2"
+                      type="password"
+                      placeholder="********"
+                    />
+                  </label>
+                </div>
                 <div className="flex flex-wrap justify-between -m-2 mb-4">
                   <div className="w-auto p-2">
                     <div className="flex items-center">
