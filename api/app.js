@@ -1,29 +1,23 @@
 import cors from "cors";
 import dotenv from "dotenv";
-import express, { Router } from "express";
+import express from "express";
 import { dbConnect } from "./configs/dbConfig.js";
+import routes from "./routes/api.js";
+import productRouter from "./routes/products.routes.js";
+import { END_POINT, END_POINT_PRODUCTS } from "./utils/constants.js";
 
 dotenv.config();
 
-/**
- * L'URL de base
- * @type {string}
- */
-export const END_POINT = process.env.BASE_URL;
 const app = express();
-const routes = Router();
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cors());
+
+// On se connecte à la base de donnée
+dbConnect();
+
 // On créer notre miniApplication sur un ENDBOIN
 app.use(END_POINT, routes);
-
-routes.use(express.json());
-routes.use(express.urlencoded({ extended: false }));
-routes.use(cors());
-dbConnect();
-routes.get("/", (req, res) => {
-  res.json({ message: "Home Page" });
-});
-routes.get("/products", (req, res) => {
-  res.json({ message: "Products Page" });
-});
+app.use(END_POINT_PRODUCTS, productRouter);
 
 export default app;
