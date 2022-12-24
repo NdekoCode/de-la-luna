@@ -1,8 +1,9 @@
 import { lazy, Suspense } from "react";
 import { Navigate } from "react-router-dom";
-import Loading from "../components/Loading";
+import Loading from "../Loading";
 const Login = lazy(() => import("../pages/Login"));
 const Register = lazy(() => import("../pages/Register"));
+const About = lazy(() => import("../pages/About"));
 const routes = [
   {
     path: "/",
@@ -24,6 +25,16 @@ const routes = [
     component: (
       <Suspense fallback={<Loading />}>
         <Register />
+      </Suspense>
+    ),
+  },
+
+  {
+    path: "/about",
+    protect: false,
+    component: (
+      <Suspense fallback={<Loading />}>
+        <About />
       </Suspense>
     ),
   },
