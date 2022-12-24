@@ -6,7 +6,7 @@ const productRouter = Router();
 
 productRouter.get("/", async (req, res) => {
   try {
-    const products = await ProductMDL.find();
+    const products = await ProductMDL.find().sort({ createdAt: -1 });
     return res.json({ products });
   } catch (error) {
     console.log(error.message);
@@ -15,7 +15,7 @@ productRouter.get("/", async (req, res) => {
 productRouter.post("/add", async (req, res) => {
   const validator = new Validator();
   const alert = new Alert(req, res);
-  const bodyRequest = { ...body };
+  const bodyRequest = { ...req.body };
   if (!validator.isEmpty(bodyRequest)) {
     const product = new ProductMDL(bodyRequest);
     try {
