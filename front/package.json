@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "start": "concurrently \"cd ../api && pnpm start\" \"pnpm run dev\"",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -11,11 +12,17 @@
   "dependencies": {
     "@stripe/react-stripe-js": "^1.16.1",
     "@stripe/stripe-js": "^1.46.0",
+    "@testing-library/dom": "^8.19.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "axios": "^1.2.1",
     "concurrently": "^7.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.1",
+    "react-toastify": "^9.1.1",
     "realm-web": "^2.0.0",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
