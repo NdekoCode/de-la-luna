@@ -2,9 +2,12 @@ import { useState } from "react";
 
 export function useToggle(initialValue = false) {
   const [toggle, setToggle] = useState(initialValue);
-  const handleToggle = () => {
-    console.log("render");
-    setToggle((d) => !d);
+  const handleToggle = (v = null) => {
+    if (v) {
+      setToggle(v);
+    } else {
+      setToggle((d) => !d);
+    }
   };
   return [toggle, handleToggle];
 }
