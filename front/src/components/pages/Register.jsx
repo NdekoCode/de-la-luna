@@ -102,7 +102,7 @@ const Register = () => {
                       </p>
                       <input
                         className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-                        id="signInInput1-1"
+                        id="signInInput1-2"
                         type="text"
                         placeholder="Enter your last Name"
                       />
@@ -116,7 +116,7 @@ const Register = () => {
                     </p>
                     <input
                       className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-                      id="signInInput1-1"
+                      id="signInInput1-3"
                       type="text"
                       placeholder="Enter email address"
                     />
@@ -130,7 +130,7 @@ const Register = () => {
                     </p>
                     <input
                       className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-                      id="signInInput1-1"
+                      id="signInInput1-4"
                       type="text"
                       placeholder="Enter phone Number"
                     />
@@ -143,8 +143,9 @@ const Register = () => {
                     </p>
                     <input
                       className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-                      id="signInInput1-2"
+                      id="signInInput1-5"
                       type="password"
+                      autoComplete="true"
                       placeholder="********"
                     />
                   </label>
@@ -156,7 +157,8 @@ const Register = () => {
                     </p>
                     <input
                       className="px-4 py-3.5 w-full text-gray-400 font-medium placeholder-gray-400 bg-white outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
-                      id="signInInput1-2"
+                      id="signInInput1-6"
+                      autoComplete="true"
                       type="password"
                       placeholder="********"
                     />

@@ -7,7 +7,7 @@ const SearchBar = () => {
         <label htmlFor="search" className="sr-only">
           Search{" "}
         </label>
-        <form methode="get" action="#" className="relative z-50">
+        <form methode="get" action="#" className="relative z-40">
           <button
             type="submit"
             id="searchsubmit"
