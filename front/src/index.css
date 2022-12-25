@@ -1,9 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@layer base {
-  body {
-    font-family: Inter,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
+.link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration:none;
+}
+a {
+    text-decoration:none;
+}
+.link:hover {
+    color: initial;
+}
+.icon {
+    height: 1.25rem;
+    aspect-ratio: 1/1;
+    fill: currentColor;
 }
