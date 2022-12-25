@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@popperjs/core': ^2.11.6
   '@stripe/react-stripe-js': ^1.16.1
   '@stripe/stripe-js': ^1.46.0
   '@testing-library/dom': ^8.19.1
@@ -12,6 +13,7 @@ specifiers:
   '@vitejs/plugin-react': ^3.0.0
   autoprefixer: ^10.4.13
   axios: ^1.2.1
+  bootstrap: ^5.2.3
   concurrently: ^7.6.0
   postcss: ^8.4.20
   react: ^18.2.0
@@ -29,6 +31,7 @@ specifiers:
   web-vitals: ^3.1.0
 
 dependencies:
+  '@popperjs/core': 2.11.6
   '@stripe/react-stripe-js': 1.16.1_keartrz7uyerl3wkpjpue4xbhy
   '@stripe/stripe-js': 1.46.0
   '@testing-library/dom': 8.19.1
@@ -36,6 +39,7 @@ dependencies:
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@testing-library/user-event': 14.4.3_ua4wuun3fnehcjqtqj2e2ldgpe
   axios: 1.2.1
+  bootstrap: 5.2.3_@popperjs+core@2.11.6
   concurrently: 7.6.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -578,6 +582,10 @@ packages:
       fastq: 1.14.0
     dev: true
 
+  /@popperjs/core/2.11.6:
+    resolution: {integrity: sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==}
+    dev: false
+
   /@realm/common/0.1.4:
     resolution: {integrity: sha512-bKpIRZIQ4ykribFi0igCwuvf7P4+Ex2XYKqDw1JDe6sCGAaPMwhazooyM6h32fUjtXRTbdAWH2S9JH8Xh/LrqQ==}
     dev: false
@@ -868,6 +876,14 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
     dev: true
+
+  /bootstrap/5.2.3_@popperjs+core@2.11.6:
+    resolution: {integrity: sha512-cEKPM+fwb3cT8NzQZYEu4HilJ3anCrWqh3CHAok1p9jXqMPsPTBhU25fBckEJHJ/p+tTxTFTsFQGM+gaHpi3QQ==}
+    peerDependencies:
+      '@popperjs/core': ^2.11.6
+    dependencies:
+      '@popperjs/core': 2.11.6
+    dev: false
 
   /braces/3.0.2:
     resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
